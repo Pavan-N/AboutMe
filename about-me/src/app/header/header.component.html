@@ -1,0 +1,24 @@
+<div class="container-fluid">
+  <div class="row">
+    <div class="col border rounded" style="background-color: #e7f1ff;">
+      <ul class="nav nav-tabs justify-content-center">
+        <li class="nav-item">
+          <a class="nav-link" routerLink="home" routerLinkActive="active">
+            <span>
+              <strong class="text-secondary">HOME</strong>
+            </span>
+          </a>
+        </li>
+        <li class="nav-item" *ngFor="let appLink of appLinks | keyvalue : returnZero">
+          <a class="nav-link" aria-current="page"
+             routerLink="{{appLink.key}}" routerLinkActive="active">
+            <span>
+              <strong class="text-secondary">{{appLink.value}}</strong>
+            </span>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <br>
+</div>

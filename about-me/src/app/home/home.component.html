@@ -17,7 +17,7 @@
         <nav aria-label="breadcrumb" class="bg-light" *ngFor="let appLink of appLinks | keyvalue : returnZero">
           <ol class="breadcrumb rounded" style="background-color: #e3f2fd;">
             <li class="breadcrumb-item active" aria-current="page">
-              <a class="nav-link" routerLink="{{appLink.key}}">
+              <a class="nav-link" routerLink="/{{appLink.key}}">
                 <span class="text-dark">{{appLink.value}}</span>
               </a>
             </li>

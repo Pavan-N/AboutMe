@@ -9,13 +9,14 @@ import {ProfessionalExperienceComponent} from "./professional-experience/profess
 import {TechnicalExpertiseComponent} from "./technical-expertise/technical-expertise.component";
 
 const routes: Routes = [
-  { path: '', component: HomeComponent, pathMatch: 'full' },
-  { path: 'home', redirectTo: '' },
+  { path: '', redirectTo: 'home', pathMatch: 'full' },
+  { path: 'home', component: HomeComponent },
   { path: 'experience', component: ProfessionalExperienceComponent },
   { path: 'technical', component: TechnicalExpertiseComponent },
   { path: 'achievements', component: AchievementsComponent },
   { path: 'qualification', component: EducationalQualificationComponent },
-  { path: 'personal', component: PersonalDetailsComponent }
+  { path: 'personal', component: PersonalDetailsComponent },
+  { path: '**', redirectTo: 'home' }
 ];
 
 @NgModule({

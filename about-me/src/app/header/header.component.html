@@ -1,11 +1,11 @@
 <div class="container-fluid">
   <div class="row">
-    <div class="col border rounded" style="background-color: #e7f1ff;">
+    <div class="col" >
       <ul class="nav nav-tabs justify-content-center">
         <li class="nav-item">
           <a class="nav-link" routerLink="home" routerLinkActive="active">
             <span>
-              <strong class="text-secondary">HOME</strong>
+              <strong class="text-secondary text-light" routerLinkActive="text-dark">HOME</strong>
             </span>
           </a>
         </li>
@@ -13,7 +13,7 @@
           <a class="nav-link" aria-current="page"
              routerLink="{{appLink.key}}" routerLinkActive="active">
             <span>
-              <strong class="text-secondary">{{appLink.value}}</strong>
+              <strong class="text-secondary text-light" routerLinkActive="text-dark">{{appLink.value}}</strong>
             </span>
           </a>
         </li>

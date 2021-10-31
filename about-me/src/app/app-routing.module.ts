@@ -16,7 +16,7 @@ const routes: Routes = [
   { path: 'achievements', component: AchievementsComponent },
   { path: 'qualification', component: EducationalQualificationComponent },
   { path: 'personal', component: PersonalDetailsComponent },
-  { path: '**', redirectTo: 'home' }
+  { path: '**', redirectTo: 'home'}
 ];
 
 @NgModule({

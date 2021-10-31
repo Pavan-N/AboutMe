@@ -2,3 +2,35 @@
 .modal {
   background: rgba(0,0,0, .5);
 }
+
+.bgimg {
+  background-position: center;
+  background-size: cover;
+  background-image: url("src/background.jpg");
+  min-height: 100vh;
+  background-repeat: no-repeat;
+}
+
+body {
+  font-family: "Bodoni MT" ,"Arial Rounded MT Bold", "Times New Roman"
+}
+
+.list-group-item {
+  background-color: #d7d8da;
+  border: 1px solid;
+}
+
+.accordion-button:not(.collapsed) {
+  color: black;
+  background-color: #d7d8da;
+}
+
+.accordion-button:not(.collapsed)::after {
+  background-image: url('./chevron-up.svg');
+}
+
+.accordion-button::after {
+  background-image: url('./chevron-down.svg');
+}
+
+

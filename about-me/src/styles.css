@@ -33,4 +33,21 @@ body {
   background-image: url('./chevron-down.svg');
 }
 
+.column-content {
+  min-height: 8vh;
+  text-align: center;
+  vertical-align: center;
+  border-bottom: 1px solid black;
+}
 
+.even-row {
+  background-color: #e2e3e5;
+}
+
+.odd-row {
+  background-color: #d7d8da;
+}
+
+.selectedLink {
+  color: #a57b00 !important;
+}

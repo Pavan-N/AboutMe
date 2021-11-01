@@ -10,14 +10,14 @@
   <div class="justify-items-center">
     <a class="nav-link" routerLink="home" routerLinkActive="active" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent">
       <span>
-        <strong class="text-secondary text-light" routerLinkActive="text-dark">HOME</strong>
+        <strong class="text-secondary text-light" routerLinkActive="selectedLink">HOME</strong>
       </span>
     </a>
     <a class="nav-link" aria-current="page"
        *ngFor="let appLink of appLinks | keyvalue : returnZero"
        routerLink="{{appLink.key}}" routerLinkActive="active" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent">
       <span>
-        <strong class="text-secondary text-light" routerLinkActive="text-dark">{{appLink.value}}</strong>
+        <strong class="text-secondary text-light" routerLinkActive="selectedLink">{{appLink.value}}</strong>
       </span>
     </a>
   </div>

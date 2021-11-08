@@ -1,26 +1,26 @@
-<div class="container align-items-center justify-content-center ">
+<div class="container align-items-center justify-content-center">
   <div class="row justify-content-center">
-    <div class="col-sm-6 text-center fst-italic" style="color: #3f3d3a;">
+    <div class="col-md-6 text-center fst-italic" style="color: #3f3d3a;">
       <h2>Thank you for showing interest in my profile!</h2>
     </div>
   </div>
   <br>
   <div class="row justify-content-center">
-    <div class="col-sm-6 text-center text-light">
+    <div class="col-md-6 text-center text-light">
       <h3>What do you want to know about me?</h3>
     </div>
   </div>
   <br>
   <div class="row justify-content-center">
-    <div class="col-sm-4 offset-sm-0">
+    <div class="col-md-5">
       <nav aria-label="breadcrumb" *ngFor="let appLink of appLinks | keyvalue : returnZero">
-        <ol class="breadcrumb rounded-pill border">
-          <li class="breadcrumb-item active" aria-current="page">
-            <a class="nav-link" routerLink="/{{appLink.key}}">
+        <a class="breadcrumb rounded-pill justify-content-center border nav-link" routerLink="/{{appLink.key}}">
+          <div class="breadcrumb-item active" aria-current="page">
+            <div class="nav-link">
               <span class="text-light">{{appLink.value}}</span>
-            </a>
-          </li>
-        </ol>
+            </div>
+          </div>
+        </a>
       </nav>
     </div>
   </div>

@@ -1,4 +1,3 @@
-import { Component } from '@angular/core';
 import {Component, OnInit} from '@angular/core';
 import {ActivatedRoute, NavigationEnd, Router} from "@angular/router";
 import {filter} from "rxjs/operators";
@@ -8,7 +7,6 @@ import {filter} from "rxjs/operators";
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
-export class AppComponent {
 export class AppComponent implements OnInit {
   title = 'about-me';
   hideHeader: boolean = false;
@@ -24,4 +22,3 @@ export class AppComponent implements OnInit {
       });
   }
 }
-

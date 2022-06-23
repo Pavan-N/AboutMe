@@ -12,7 +12,8 @@
 }
 
 body {
-  font-family: "Bodoni MT" ,"Arial Rounded MT Bold", "Times New Roman"
+  font-family: "Bodoni MT" ,"Arial Rounded MT Bold", "Times New Roman";
+  margin: auto
 }
 
 .list-group-item {
@@ -50,4 +51,8 @@ body {
 
 .selectedLink {
   color: #a57b00 !important;
+}
+
+.center {
+  margin: auto;
 }
